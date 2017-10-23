@@ -7,6 +7,7 @@ package kuis5;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
+import static java.lang.Integer.parseInt;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -56,15 +57,16 @@ public class FXMLDocumentController implements Initializable {
     }    
     
     String nama, jenis, idealnya;
-    int tinggi, berat, ideal;
+    int tinggi, berat;
+    int ideal = 0;
     @FXML
     private void proses(ActionEvent event) {
         if (rdLaki.isSelected()) {
             jenis = "Laki-laki";
-            ideal = tinggi - 105;
+            ideal = parseInt(edittinggi.getText());
         } else if (rdPerempuan.isSelected()) {
             jenis = "Perempuan";
-            ideal = tinggi - 110;
+            ideal = parseInt(edittinggi.getText());
         } else {
             jenis = "";
         }
