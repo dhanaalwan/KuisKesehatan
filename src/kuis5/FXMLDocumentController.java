@@ -90,6 +90,14 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void reset(ActionEvent event) {
+        editnama.setText("");
+        edittinggi.setText("");
+        beratideal.setText("");
+        editberat.setText("");
+        hasil.setText("");
+        saran.setText("");
+        rdLaki.setSelected(false);
+        rdPerempuan.setSelected(false);
     }
     
 }
