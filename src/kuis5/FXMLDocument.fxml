@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="444.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="kuis5.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuis5.FXMLDocumentController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <Label layoutX="161.0" layoutY="26.0" text="Pengecekan Kesehatan" />
@@ -50,6 +50,8 @@
       <Label layoutX="108.0" layoutY="288.0" text="Berat Ideal" />
       <TextField fx:id="beratideal" layoutX="177.0" layoutY="284.0" prefHeight="25.0" prefWidth="45.0" />
       <Label layoutX="228.0" layoutY="288.0" text="Kg" />
-      <TextArea fx:id="saran" layoutX="99.0" layoutY="411.0" prefHeight="50.0" prefWidth="258.0" />
+      <TextArea fx:id="saran" layoutX="99.0" layoutY="428.0" prefHeight="50.0" prefWidth="258.0" />
+      <Label layoutX="99.0" layoutY="317.0" text="Hasil Cek " />
+      <Label layoutX="99.0" layoutY="403.0" text="Saran Kesehatan" />
     </children>
 </AnchorPane>

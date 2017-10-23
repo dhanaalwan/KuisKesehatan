@@ -24,7 +24,7 @@ import javafx.scene.control.ToggleGroup;
  * @author Dna
  */
 public class FXMLDocumentController implements Initializable {
-    
+
     @FXML
     private Label label;
     @FXML
@@ -49,13 +49,13 @@ public class FXMLDocumentController implements Initializable {
     private TextField beratideal;
     @FXML
     private TextArea saran;
-    
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
+
     String nama, jenis, idealnya;
     int tinggi, berat;
     int ideal = 0;
@@ -63,13 +63,13 @@ public class FXMLDocumentController implements Initializable {
     private void proses(ActionEvent event) {
         if (rdLaki.isSelected()) {
             jenis = "Laki-laki";
-            ideal = parseInt(edittinggi.getText());
+            ideal = parseInt(edittinggi.getText())-105;
         } else if (rdPerempuan.isSelected()) {
             jenis = "Perempuan";
-            ideal = parseInt(edittinggi.getText());
+            ideal = parseInt(edittinggi.getText())-110;
         } else {
             jenis = "";
-        }
+    }
          idealnya=String.valueOf(ideal);
          beratideal.setText(idealnya);
          nama = editnama.getText();
