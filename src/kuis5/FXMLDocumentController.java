@@ -73,8 +73,17 @@ public class FXMLDocumentController implements Initializable {
          nama = editnama.getText();
          tinggi = Integer.parseInt(edittinggi.getText());
          berat = Integer.parseInt(editberat.getText());
-         hasil.setText("Nama Pasien: " + nama + "\n" + "Tinggi : "  + tinggi +"\n"
-                 + "Berat Badan : " + berat + "\n" + "Jenis Kelamin : " + jenis + "\n" );
+         if(berat<ideal){
+             hasil.setText("Nama "+nama+"\nAnda Underweight");
+             saran.setText("Anda harus menambah gizi");
+         }else if(berat>ideal){
+             hasil.setText("Nama "+nama+"\nAnda Overweight");
+             saran.setText("Anda harus diet");
+         }else if(berat==ideal){
+             hasil.setText("Nama "+nama+"\nAnda Ideal");
+             saran.setText("Perfect!");
+         }
+
     }
 
     @FXML
